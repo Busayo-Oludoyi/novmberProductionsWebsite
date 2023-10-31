@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg {
+    position: relative;
+    height: 90vh;
+    background-image: url('LandingpagePhotosDraft/Directorsbg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    z-index: -1;
+
+}
+.logo_navbar {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
+    color: white;
+}
+div.ul {
+    align-self: center;
+}
+.ul li {
+    padding: 20px;
+    display: inline;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.ul li:hover {
+    opacity: 0.8;
+}
+
+div.MidPageContent{
+    grid-column: 2 / span 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.MidPageContent p.work{
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 3em;
+    /* padding-bottom: 100px;     */
+}
+
+
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 40px;
+   color: white;
+    background-color: rgb(24, 27, 33);
+}
+.footer-ul {
+    grid-column: span 12;
+} 
+.footer-ul ul {
+    display: flex;
+    justify-content: center;
+
+}
+.footer-ul ul li {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 20px;
+
+}
+.footer-ul ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+div.subscribe {
+    background-color: rgb(70, 69, 69);
+    grid-column: 3 / span 8;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+p.sub {
+    font-size: 1.8em;
+}
+p.signup {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+p.privacy {
+    font-size: 0.9em;
+}
+div.search {
+    grid-column: 3 / span 8;
+    text-align: center;
+    
+}
+div.search input {
+    width: 100%;
+    padding: 10px;
+}
+input[type=email] {
+    padding: 15px 40px 15px 10px;
+}
+button {
+    padding: 15px 40px;
+}
+div.copyright {
+    grid-column: 2/ span 10;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 100px;
+}
