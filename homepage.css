@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg {
+    position: relative;
+    height: 90vh;
+    background-image: url('LandingpagePhotosDraft/264A0606.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    z-index: -1;
+
+}
+.logo_navbar {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    /* justify-content:space-between; */
+    padding: 20px 40px 20px 40px;
+    color: rgb(255, 255, 255);
+}
+div.ul {
+    align-self: center;
+    width: 100%;
+}
+.ul ul {
+    text-align: end;
+}
+.ul li {
+    padding: 20px;
+    display: inline;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+.ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.ul li.hov:hover {
+    opacity: 0.8;
+}
+
+.dropdown {
+    /* visibility: hidden; */
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    
+}
+.dropdown li {
+    padding: 0px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    text-align: start;
+    background-color: rgba(31, 30, 30);
+    /* color: black; */
+    /* opacity: 0.6;
+    transition: 0.3s; */
+}
+
+.dropdown-content a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    
+}
+.dropdown-content a:hover {
+    background-color: black;
+    opacity: 1;
+
+}
+
+div.MidPageContent{
+    grid-column: 2 / span 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div.MidPageContent p{
+ padding: 10px;
+ color: white;
+ letter-spacing: 1px;
+}
+div.MidPageContent p.work{
+    font-weight: 400;
+    font-size: 2.5em;
+}
+div.MidPageContent p.content{
+    font-weight: 200;
+    font-size: 1.6em;
+}
+
+
+/* AFTER PARALAX */
+
+div.second_root {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    min-height: 150px;
+    background-color: rgb(12, 14, 17);
+    /* background-image: url('LandingpagePhotosDraft/overall_bg.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 1px; */
+    padding-bottom: 150px;
+}
+div.youtube {
+    padding: 10px;
+    justify-content: center;
+    margin: 0 auto;   
+}
+article {
+    color: white;
+    max-width: 70vw;
+    margin: 0 auto;
+    text-align: justify;
+}
+article h1{
+    padding-top: 20px ;
+    font-size: 1.9em;
+    margin-bottom: 20px;
+}
+article p{
+    padding: 10px 0px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-indent: 20px;
+}
+p.start::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 40px;
+   color: white;
+    background-color: rgb(24, 27, 33);
+}
+.footer-ul {
+    grid-column: span 12;
+} 
+.footer-ul ul {
+    display: flex;
+    justify-content: center;
+
+}
+.footer-ul ul li {
+    list-style-type: none;
+    font-size: 1.2em;
+    padding: 20px;
+
+}
+.footer-ul ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+div.subscribe {
+    background-color: rgb(70, 69, 69);
+    grid-column: 3 / span 8;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+p.sub {
+    font-size: 1.8em;
+}
+p.signup {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+p.privacy {
+    font-size: 0.9em;
+}
+div.search {
+    grid-column: 3 / span 8;
+    text-align: center;
+    
+}
+div.search input {
+    width: 100%;
+    padding: 10px;
+}
+input[type=email] {
+    padding: 15px 40px 15px 10px;
+}
+button {
+    padding: 15px 40px;
+}
+div.copyright {
+    grid-column: 2/ span 10;
+    text-align: center;
+    font-size: 1.2em;
+    padding-bottom: 100px;
+}
