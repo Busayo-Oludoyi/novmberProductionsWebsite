@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('LandingpagePhotosDraft/indexbg.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+/* div.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+} */
+div.logo_nav_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 100vh;
+    justify-content: center;
+   
+
+}
+div.logo, div.nav, div.enter_button {
+     padding: 15px;
+}
+
+ul {
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+   
+}
+
+li{
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    letter-spacing: 3px;
+    padding: 10px;
+    cursor: pointer;
+    /* text-decoration: underline rgba(214, 220, 233, 0.192);
+    text-underline-offset: 5px;
+    transition: 0.5s; */
+
+}
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+
+}
+li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    /* text-decoration: underline white;
+    cursor: pointer; */
+}
+
+
+
+
+div.enter_button a {
+  background-color: white;
+    border-radius: 5px;
+    /* margin-top: 10px; */
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+    min-width: 50px;
+    display: table;
+    padding: 15px 30px;
+    border: none;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+div.enter_button a:hover {
+    background-color: #272727 !important;
+}
+
+span {
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+    line-height: 24px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+div.enter_button a:hover span {
+    color: #fff;
+}
+.btnBefore, .btnAfter {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid #000;
+    border-width: 0;
+    border-radius: 0;
+    transition: 0;
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -o-transition: 0;
+    -ms-transition: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-color: #fff;
+    border-radius: 5px;
+}
+div.enter_button a .btnBefore {
+    right: 0;
+    bottom: 0;
+}
+div.enter_button a .btnAfter {
+    left: 0;
+    top: 0;
+}
+div.enter_button a:hover .btnBefore {
+    border-width: 0 0 2px 2px;
+}
+div.enter_button a:hover .btnAfter {
+    border-width: 2px 2px 0 0;
+}
+
+div.enter_button a:hover .btnAfter, div.enter_button a:hover .btnBefore {
+height: 100%;
+width: 100%;
+transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-webkit-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-moz-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-o-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+-ms-transition: width 0.5s ease, height 0.5s ease 0.5s, border-top-right-radius 0.1s ease 0.4s, border-bottom-left-radius 0.1s ease 0.4s, border-bottom-right-radius 0.1s ease 0.9s, border-top-left-radius 0.1s ease 0.9s;
+}
+
+
+
+
+    /* button {
+    width: 180px;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+
+}
+button:hover{
+    background-color: rgb(31, 244, 20);
+    color: white;
+    transition: 0.5s;
+} */
+@media screen and (max-width: 763px) {
+
+    div.logo img{
+        width: 200px;
+        height: 150px;
+    }
+    li {
+    font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 615px){
+    div.logo img {
+        width: 150px;
+        height: 100px;
+    }
+    div.logo, div.nav, div.enter_button {
+        padding: 12px;
+   }   
+    ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    li {
+        padding: 3px;
+        font-size: 0.8em;
+    }
+    a{
+        padding: 10px 10px;
+    }
+    span {
+        letter-spacing: 1px;
+    }
+
+}
